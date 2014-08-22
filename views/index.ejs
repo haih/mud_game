@@ -1,0 +1,46 @@
+<doctype html>
+<html>
+<head>
+    <title><%= mud %></title>
+
+    <meta charset='utf-8' />
+
+    <link rel='icon' type='image/png' href='/img/icon.png' />
+
+    <link rel='stylesheet' type='text/css' media='all' href='/css/layout.css' />
+    <link rel='stylesheet' type='text/css' media='all' href='/css/colors.css' />
+
+    <!--<script type='text/javascript' src='/socket.io/socket.io.js'></script>-->
+    <script type='text/javascript' src='/javascripts/lib/jquery-1.4.4.min.js'></script>
+
+</head>
+    <body>
+        <h1>大话西游-约会篇</h1>
+        <h3>
+            自盘古辟三界四洲仙、、魔三族共东胜神洲、西牛贺洲、南赡部洲北俱芦洲确定格局三界间原本平共存：
+            仙族高高统治主宰切族瞻仰着神光辉息世代繁衍魔族始终封印黑暗倔强孤傲存着数万光阴似水流万三千前场变故使魔族举进犯仙族扰乱整世界秩序据庭史记：
+            众魔屠仙变色月黯淡光进犯势破竹庭卫兵狂风落叶……
+        </h3>
+        <h3>   见其惨烈程度非同般经役仙族统治位遭摇封印魔族始伺机；神州冤魂野鬼遍行妖兽魔物重凡更难抗魔鸡鸣狗盗、
+            仇恨杀戮充斥间……　转眼唐间说佛祖于灵山雷音宝刹唤聚诸佛、阿罗、揭谛、菩萨、金刚、比丘僧、尼论讲道谈数众善恶佛祖看见间苦难顿慈悲起于召南海观世音
+            菩萨说乘佛三藏能超度亡魂解脱苦难让寿身坏需要佛缘诚拜求克服九九八十难、脱肉身羁绊才能取；用经文传于东土唐解除间厄难于观音士点化取经西行取经奈数
+            已定取经路注定磨难重重……</h3>
+        <marquee id="scrollArea" height="50" width="600" loop="1" scrollamount="4" scrolldelay="3"
+                 onfinish="alert(event.srcElement.id + ' finished looping.')" behavior = "slide" > 数仙、魔共存于世际东海滨集精华、山川灵气、能辈渔村村面说降肩负化解数重任命于踏征途……</marquee>
+        <p>你喜欢大话西游中的软妹子还是女汉子?</p>
+        <div id='context'>
+            <div style="margin-top:500px;" method="post" target="hideIframe">
+                <div class="form_line">
+                    <div class="your_answer">你的回答：</div>
+                    <input type="text" id="answer" />
+                </div>
+                <div class="form_line">
+                    <div class="form_label"></div>
+                    <button class="button gray"  onclick="getAnswer();" >发送</button>
+                </div>
+            </div>
+        </div>
+    </body>
+<script src='/javascripts/lib/zepto.min.js'></script>
+<script src='/javascripts/index.js'></script>
+</html>
